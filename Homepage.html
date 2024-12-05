@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY WEBSITE</title>
+<style>
+body {
+  margin: 0;
+  font-family: cambria;
+}
+
+.text {
+  width: 1000px;
+  margin: auto;
+  background-color: #ccd5ae;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6)
+}
+
+.header {
+  padding: 100px;
+  text-align: left;
+  background: #364958;
+  color: white;
+  font-family: cambria;
+  background-image: url(gmbrheader1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.marquee h1, .marquee h3 {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #87bba2;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #00b2ca;
+  color: white;
+}
+
+
+section {
+  display: none;
+  padding: 50px 50px;
+}
+
+
+section:target {
+  display: block;
+}
+
+
+
+html {
+  scroll-behavior: smooth; 
+}
+
+:target {
+  scroll-margin-top: 100px; 
+}
+
+iframe {
+  width: 100%;
+  border: none;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+<div class="marquee">
+<marquee behavior="scroll" direction="up" scrollamount="3">
+<h1>WELCOME TO MY WEBSITE</h1>
+<h3>A glimpse into my world.</h3>
+</marquee>
+</div>
+</div>
+
+
+<div class="navbar">
+  <a href="#home-section" class="active">HOME</a>
+  <a href="#biodata-section">BIODATA</a>
+  <a href="#experiences-section">MY EXPERIENCES</a>
+  <a href="#education-section">MY EDUCATION</a>
+  <a href="#family-section">MY FAMILY</a>
+</div>
+
+
+<section id="home-section">
+  <center>
+    <h style="font-family: brush script mt, cursive; font-size: 50px;">HELLO</h>
+  </center>
+  <center>
+    <h style="font-family: brush script mt, cursive; font-size: 50px;">I'M DANISH MIRZA</h>
+  </center>
+  <div class="text">
+    <center>
+      <h2 style="font-family: cambria;">
+        This website consists of details about myself, including my biodata, research studies, accomplishments, family members, and pictures of the activities I engaged in. I'm excited to share my journey with you and hope this website inspires you to pursue your own passions, together, we can make a difference. Feel free to explore the different sections of our website to learn more about me. I'm grateful for the opportunities I've had and the people who have supported me along the way. I hope this website reflects my appreciation for their kindness and guidance. I've poured my heart and soul into creating this website, and I hope you enjoy exploring it as much as I enjoyed building it. If you have any questions or comments, please don't hesitate to contact me. Thank you for visiting our website. I hope you know more facts about me. Get to know me well. Happy scrolling! And remember, what you see here is just the tip of the iceberg. There's always more to discover!.      </h2>
+    </center>
+  </div>
+</section>
+
+<section id="biodata-section">
+  <iframe src="biodata.html" title="Biodata" height="1300"></iframe>
+</section>
+
+<section id="experiences-section">
+  <iframe src="experiences.html" title="My Experiences" height="2700"></iframe>
+</section>
+
+<section id="education-section">
+  <iframe src="Education.html" title="My Education" height="2100"></iframe>
+</section>
+
+<section id="family-section">
+  <iframe src="myfamily.html" title="My Family" height="1000" ></iframe>
+</section>
+
+</body>
+</html>
